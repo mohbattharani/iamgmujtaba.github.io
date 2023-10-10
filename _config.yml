@@ -9,8 +9,6 @@ last_name: Mujtaba
 email: gmujtabakorai@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Ghulam Mujtaba is a distinguished researcher in the field of Computer Vision and Deep Learning, currently working as a Postdoctoral Researcher at West Virginia University. He earned his Ph.D. in Computer Engineering from Gachon University and gained extensive research expertise at Sungkyunkwan University, specializing in computer vision and deep learning techniques. With a strong foundation in Computer Science, he excels in visual analysis, multimedia retrieval, and image processing, contributing significantly to both academic and industrial advancements in these fields.
-
-# Amin Ullah is a dedicated Computer Vision, Deep Learning Researcher currently working as a Postdoctoral Scholar at the Deep Machine Vision Lab, Oregon State University in Corvallis, Oregon. He obtained his Ph.D. from the Intelligent Media Laboratory (IMLab) at Sejong University, South Korea, where he was privileged to be mentored by Prof. Sung Wook Baik. In addition, Dr. Khan Muhammad played a significant role as his co-supervisor. Presently, Amin collaborates with Prof. Fuxin Li at the Collaborative Robotics and Intelligent Systems (CoRIS) Institute, situated at Oregon State University. With his vast expertise and unwavering commitment, Amin Ullah stands as a prominent figure in the realm of computer vision and machine learning research.
   
 # footer_text: >
 #   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -23,7 +21,7 @@ icon: favicon.png  # the emoji used as the favicon (alternatively, provide image
 
 url: https://iamgmujtaba.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
-last_updated: true # set to true if you want to display last updated in the footer
+last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
