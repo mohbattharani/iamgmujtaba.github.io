@@ -7,9 +7,7 @@ tags: [Video, Thumbnails, YouTube, Python, FFmpeg]
 thumbnail: assets/img/blog/thumb_sample.png
 ---
 
-
-This repository explains the process to generate thumbnail containers from videos. In recent years, several methods have been designed to improve the demanding timeline manipulation for video browsing. One of the most popular methods for web-based video players is the use of lightweight thumbnail containers. Users can skim through the video player for efficiency and instantly preview a lengthy video, by watching the thumbnail preview in the web player interface. As the thumbnails are easy to integrate and navigate in web-based video players, several famous video-on-demand (VoD) streaming platforms adopt these in their end-user video players [ref1](https://arxiv.org/abs/2201.09049).
-
+This repository is a comprehensive guide on the crucial process of generating thumbnail containers from videos. In recent years, numerous methods have been developed to enhance the demanding timeline manipulation for video browsing. One of the most widely used techniques for web-based video players is the utilization of lightweight thumbnail containers. These containers allow users to swiftly navigate through the video player and get an instant preview of a lengthy video by viewing the thumbnail preview in the web player interface. Due to their ease of integration and navigation in web-based video players, many renowned video-on-demand (VoD) streaming platforms have incorporated them into their end-user video players [REF](https://arxiv.org/abs/2201.09049).
 
 {% include figure.liquid loading="eager" path="assets/img/blog/thumb_sample.png" class="img-fluid rounded z-depth-1" %}
 
@@ -59,6 +57,5 @@ python .\main.py -i .\input\ -o .\output\
 
 The main code is available at [GitHub vid2tc](https://github.com/iamgmujtaba/vid2tc).
 
-
 ##### Acknowledgement
-The base code for this repository is borrowed from [Video Thumbnail Generator](https://github.com/flavioribeiro/video-thumbnail-generator).
+The base code for this repository, which ensures its reliability, has been borrowed from [Video Thumbnail Generator](https://github.com/flavioribeiro/video-thumbnail-generator).

@@ -7,32 +7,32 @@ tags: [HLS, Streaming, Windows, IIS, FFmpeg]
 thumbnail: assets/img/blog/hls_icon.jpg
 ---
 
-HTTP Live Streaming (also known as HLS) is an HTTP-based adaptive bitrate streaming communications protocol developed by Apple Inc. and released in 2009. Support for the protocol is widespread in media players, web browsers, mobile devices, and streaming media servers. In the recent past, the main method of delivering video via the internet was Adobe’s Flash video technology. However, there’s been a major shift in the world of online video streaming. Specifically, the online video delivered by protocols like HLS streaming and played by HTML5 video players has increasingly replaced Adobe’s Flash protocol. HLS resembles MPEG-DASH in that it works by breaking the overall stream into a sequence of small HTTP-based file downloads, each downloading one short chunk of an overall potentially unbounded transport stream. A list of available streams, encoded at different bit rates, is sent to the client using an extended M3U playlist [ref](https://en.wikipedia.org/wiki/HTTP_Live_Streaming). One key benefit of this protocol relates to its compatibility features. Unlike other streaming formats, HLS is compatible with a wide range of devices and firewalls. However, latency (or lag time) tends to be in the 15-30 second range with HLS live streams. Now, we will move forward towards the steps followed in the process:
+HTTP Live Streaming (also known as HLS) is an HTTP-based adaptive bitrate streaming communications protocol developed by Apple Inc. and released in 2009. Support for the protocol is widespread in media players, web browsers, mobile devices, and streaming media servers. In the recent past, Adobe's Flash video technology was the primary method of delivering video via the Internet. However, there's been a significant shift in online video streaming. Specifically, online video delivered by protocols like HLS streaming and played by HTML5 video players has increasingly replaced Adobe's Flash protocol. HLS resembles MPEG-DASH, breaking the overall stream into a sequence of small HTTP-based file downloads, each downloading one short chunk of an overall potentially unbounded transport stream. A list of available streams, encoded at different bit rates, is sent to the client using an extended M3U playlist [REF](https://en.wikipedia.org/wiki/HTTP_Live_Streaming). One key benefit of this protocol relates to its compatibility features. Unlike other streaming formats, HLS is compatible with various devices and firewalls. However, latency (or lag time) tends to be in the 15-30 second range with HLS live streams. Now, we will move forward towards the steps followed in the process:
 
 ## Step 1: Creation of the Web Server
 
-Microsoft provides Internet Information Services (IIS) that can be used as a webserver. To configure, follow the below steps.
+Microsoft's Internet Information Services (IIS) is a practical and widely-used web server that we'll be using for this setup. Don't worry, the configuration process is not as daunting as it may seem. Just follow these simple steps:
 
-1. Select and open Windows features (WindowsKey+S (Search box) then type **Turn Windows features on or off**).
+1. Start by selecting and opening Windows features (WindowsKey+S (Search box) then type **Turn Windows features on or off**).
 2. Find Internet Information Services and Tick the box (Wait for the process to configure and then **Close**).
 3. Test it by opening Chrome and navigating to your local internet address, **127.0.0.1**.
 
 
-4. The default page should appear (If not reboot your system).
+4. The default page should appear (If not, reboot your system).
 
 {% include figure.liquid loading="eager" path="assets/img/blog/iis_home.jpg" class="img-fluid rounded z-depth-1" %}
 
 ## Step 2: Change Default Physical Path
 
-If you don't want to change the default path, you can skip this step. All the files can be located at the default path **C:\inetpub\wwwroot\\**
+You can skip this step if you don't want to change the default path. All the files can be located at the default path **C:\inetpub\wwwroot\\**
 
-Open IIS Manager (WindowsKey+S then type IIS). The **Default Site** stores its files in a particular directory. To expose this information, right-click on it, choose **Manage Website** then **Advanced Settings**. This will open a pop-up window with all of the Default Sites information such as files or Document Root as it is normally known, enabled protocols, and even bindings. If you click on **Physical Path** a button appears on its extreme right where you can choose a different document root.
+Open IIS Manager (WindowsKey+S, then type IIS). The **Default Site** stores its files in a particular directory. To expose this information, right-click on it, choose **Manage Website**, then **Advanced Settings**. This will open a pop-up window with all the default site information, such as files or document roots, as they are typically known, enabled protocols, and even bindings. If you click on **Physical Path**, a button will appear on its extreme right where you can choose a different document root.
 
 {% include figure.liquid loading="eager" path="assets/img/blog/iis_path.jpg" class="img-fluid rounded z-depth-1" %}
 
 ## Step 3: Enabling Cross-origin resource sharing (CORS)
 
-To test streams, you need to allow other websites to access files on your web server. However, due to security concerns, not all modern browsers allow this by default. To allow this, you need to explicitly tell the browser that you agree to a website to read data from your server. This is called cross-source resource sharing (CORS). To enable CORS to follow the below steps:
+To test streams, you must allow other websites to access files on your web server. However, not all modern browsers allow this by default due to security concerns. To allow this, you must explicitly tell the browser that you agree to a website to read data from your server. This is called cross-source resource sharing (CORS). To enable CORS to follow the below steps:
 
 1. Open the webserver (WindowsKey+S then type **IIS**).
 2. Select **Default Web Site** and Right Click or Double click **HTTP Response Headers**.
@@ -81,10 +81,6 @@ Or
 ffmpeg -i input.mp4 -force_key_frames "expr:gte(t,n_forced*10)" -strict -2 -c:a aac -c:v libx264 -f segment -segment_list_type m3u8 -segment_list_size 0 -segment_time 10.0 -segment_time_delta 0.1 -segment_list out.m3u8 out%02d.ts
 ```
 
-
-
-
-
 4. Once the process is completed, copy all the files excluding **input.mp4** into the default IIS physical path (i.e C:\inetpub\wwwroot\\) or the modified path.
 
 To generate segments from multiple videos, clone the repository using the following command:
@@ -97,9 +93,8 @@ Then run the following script:
 python .\main.py -i .\input\ -o .\output\
 ```
 
-
-
 ## Step 7: Final Testing
+
 ### Check your IP Address
 Open cmd and type **ipconfig**. Get IPv4 Address. It would be 192.XXX.XXX.XXX.
 ### Play Video on HLS Player
@@ -113,9 +108,8 @@ Open cmd and type **ipconfig**. Get IPv4 Address. It would be 192.XXX.XXX.XXX.
 If you have iPhone, open safari and type like this **192.XXX.XXX.XXX/bbb/out.m3u8**. **bbb** is the directory of the processed BigBuckBunny video and **out.m3u8** is the HLS text file we created using the above script. Please note the iPhone should be connected to the same WiFi network.
 
 #### Ubuntu or Jetson Devices
-If you want to use a native HLS web player, clone [hls.js](https://github.com/video-dev/hls.js/) from GitHub and follow the [installation](https://github.com/video-dev/hls.js/#getting-started-with-development) instructions.
+Suppose you want to use a native HLS web player. In that case, you can clone [hls.js](https://github.com/video-dev/hls.js/) from GitHub and follow the [installation](https://github.com/video-dev/hls.js/#getting-started-with-development) instructions.
 
 The main code is available at [GitHub](https://github.com/iamgmujtaba/hls-server).
 
-Raise an issue if you are facing any problem :)
-
+Raise an issue if you are facing any problems.
