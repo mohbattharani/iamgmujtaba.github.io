@@ -1,0 +1,155 @@
+{
+  "basics": {
+    "name": "Ghulam Mujtaba",
+    "label": "Assitant Professor | Researcher",
+    "image": "",
+    "email": "gmujtaba@ieee.org",
+    "url": "https://gmujtaba.com/",
+    "summary": "Dr. Ghulam Mujtaba is IEEE Senior Member and a distinguished researcher in the field of Multimedia Retrieval, Computer Vision, and Deep Learning.",
+    "location": {
+      "address": "3333 Regis Blvd",
+      "postalCode": "CO 80221",
+      "city": "Denver",
+      "countryCode": "US",
+      "region": "Colorado"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "iamgmujtaba",
+        "url": "https://www.linkedin.com/in/iamgmujtaba/"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Gachon University, Seongnam, South Korea",
+      "location": "Seongnam, South Korea",
+      "url": "https://www.gachon.ac.kr/sites/eng/",
+      "area": "Computer Engineering",
+      "studyType": "Doctor of Philosophy,",
+      "startDate": "2018-03",
+      "endDate": "2021-08",
+      "score": "",
+      "courses": ["Lightweight Client-driven Personalized Multimedia Framework for Next Generation Streaming Platforms"]
+    },
+    {
+      "institution": "Indus University, Karachi, Pakistan",
+      "location": "Karachi, Pakistan",
+      "url": "https://www.indus.edu.pk/",
+      "area": "Computer Science",
+      "studyType": "Master of Science in Computer Science,",
+      "startDate": "2014-07",
+      "endDate": "2016-6",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": " COMSATS Institute of Information Technology, Lahore, Pakistan",
+      "location": "Lahore, Pakistan",
+      "url": "https://lahore.comsats.edu.pk/default.aspx",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science in Computer Science,",
+      "startDate": "2009-09",
+      "endDate": "2013-07",
+      "score": "",
+      "courses": []
+    }
+
+  ],
+  "work": [
+    {
+        "name": "West Virginia University, Morgantown, WV, USA",
+        "location": "Morgantown, WV, USA",
+        "position": "Postdoctoral Researcher",
+        "url": "https://www.wvu.edu/",
+        "startDate": "2023-04-01",
+        "endDate": "Present",
+        "summary": ""
+    },
+    {
+        "name": "C-JeS Gulliver Studio, Seoul, South Korea",
+        "location": "Seoul, South Korea",
+        "position": "Research Engineer",
+        "url": "http://gullivervfx.com/",
+        "startDate": "2022-03-01",
+        "endDate": "2023-03-01",
+        "summary": ""
+    },
+    {
+        "name": "DeltaX.ai, Seoul, South Korea",
+        "location": "Seoul, South Korea",
+        "position": "Senior Researcher",
+        "url": "http://deltax.ai/renewal/eng/",
+        "startDate": "2021-10-01",
+        "endDate": "2022-02-28",
+        "summary": ""
+    },
+    {
+        "name": "Sungkyunkwan University, Seoul, South Korea",
+        "location": "Seoul, South Korea",
+        "position": "Visiting Researcher",
+        "url": "http://mcsl.skku.edu/",
+        "startDate": "2019-09-01",
+        "endDate": "2021-09-01",
+        "summary": ""
+    },
+    {
+        "name": "Gachon University, Seongnam, South Korea",
+        "location": "Seongnam, South Korea",
+        "position": "Graduate Research Assistant",
+        "url": "https://www.gachon.ac.kr/sites/eng/index.do",
+        "startDate": "2018-03-01",
+        "endDate": "2021-06-30",
+        "summary": ""
+    }
+    
+  ],
+  "volunteer": [],
+  
+  "awards": [
+    {
+        "title": "Doctoral Consortium",
+        "date": "2021-10-01",
+        "awarder": "International Conference on Computer Vision (ICCV)",
+        "summary": ""
+    },
+    {
+        "title": "President`s Award for Academic Excellence",
+        "date": "2021-08-01",
+        "awarder": "Gachon University, South Korea",
+        "summary": ""
+    },
+    {
+        "title": "Outstanding Research Award",
+        "date": "2020-12",
+        "awarder": "MCSL SKKU, South Korea",
+        "summary": ""
+    },
+    {
+        "title": "Finalist, Offices of Research for Hell Zone (Game)",
+        "date": "2012-06-01",
+        "awarder": "Offices of Research, Innovation & Commercialization (ORICS) Lahore, Pakistan",
+        "summary": ""
+    },
+    {
+        "title": "Winner, Gaming Competition (Stronghold Crusader)",
+        "date": "2012-01-01",
+        "awarder": "Technomoot, Abbottabad., Pakistan",
+        "summary": ""
+    },
+    {
+        "title": "Scholarship for bachelor`s degree, 2009 — 2013",
+        "date": "2009-01-01",
+        "awarder": "Ministry of IT, Pakistan",
+        "summary": ""
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "projects": []
+}
