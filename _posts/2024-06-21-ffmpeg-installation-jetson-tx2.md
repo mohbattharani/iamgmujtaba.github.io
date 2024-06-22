@@ -1,15 +1,16 @@
 ---
 layout: post
 title: FFmpeg Installation on the Jetson TX2
-subtitle: Step-by-step guide to install FFmpeg on Nvidia Jetson TX2
+description: "Step-by-step guide to install FFmpeg on Nvidia Jetson TX2."
 date: 2024-06-21  // Adjust the date accordingly
+categories: [Tutorial, Streaming, FFmpeg, Nvidia]
 tags: [FFmpeg, Jetson TX2, Nvidia, Installation]
-thumbnail: assets/img/ffmpeg_jetson.jpg
+thumbnail: assets/img/blog/ffmpeg_jetson1.jpg
 ---
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/ffmpeg_jetson.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/blog/ffmpeg_jetson.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
