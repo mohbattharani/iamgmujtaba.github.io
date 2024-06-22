@@ -2,7 +2,15 @@
 permalink: /robots.txt
 ---
 User-agent: *
-Disallow:
+Disallow: /news/announcements01/
+Disallow: /projects/1_project/
+Disallow: /projects/2_project/
+Disallow: /projects/3_project/
+Disallow: /projects/4_project/
+Disallow: /projects/5_project/
+Disallow: /projects/6_project/
+Disallow: /_pages/dropdown/
+Disallow: /news/
 
-Sitemap: https://iamgmujtaba.github.io/sitemap.xml
+Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
 
