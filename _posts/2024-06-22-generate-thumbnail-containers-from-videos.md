@@ -57,5 +57,8 @@ To generate thumbnail containers and prepare video segments, run the following s
 python .\main.py -i .\input\ -o .\output\
 ```
 
+The main code is available at [GitHub vid2tc](https://github.com/iamgmujtaba/vid2tc).
+
+
 ##### Acknowledgement
 The base code for this repository is borrowed from [Video Thumbnail Generator](https://github.com/flavioribeiro/video-thumbnail-generator).
