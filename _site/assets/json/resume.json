@@ -5,151 +5,226 @@
     "image": "",
     "email": "gmujtaba@ieee.org",
     "url": "https://gmujtaba.com/",
-    "summary": "Dr. Ghulam Mujtaba is IEEE Senior Member and a distinguished researcher in the field of Multimedia Retrieval, Computer Vision, and Deep Learning.",
+    "summary": "Dr. Ghulam Mujtaba is an IEEE Senior Member and a distinguished researcher in the fields of Computer Vision, Deep Learning for Visual Analysis, and Multimedia Retrieval. He has seven-plus years of industrial experience (3 years post-PhD) in research and engineering, with expertise in developing SOTA deep learning techniques for complex problems.",
     "location": {
-      "address": "3333 Regis Blvd",
-      "postalCode": "CO 80221",
-      "city": "Denver",
+      "address": "",
+      "postalCode": "",
+      "city": "",
       "countryCode": "US",
-      "region": "Colorado"
+      "region": ""
     },
     "profiles": [
       {
         "network": "Twitter",
         "username": "iamgmujtaba",
         "url": "https://www.linkedin.com/in/iamgmujtaba/"
-      }
+      },
+      {
+        "network": "LinkedIn",
+        "username": "iamgmujtaba",
+        "url": "https://www.linkedin.com/in/iamgmujtaba/"
+        }
     ]
   },
+  "interests": [
+    {
+      "name": "Research Interests",
+      "keywords": ["Computer Vision", "Deep Learning for Visual Analysis", "Multimedia Retrieval"]
+      }
+  ],
+  "skills": [
+      {
+        "name": "Programming Languages",
+        "keywords": ["Python", "Java", "C#"]
+      },
+      {
+        "name": "Libraries",
+        "keywords": ["PyTorch", "TensorFlow", "Keras", "OpenCV", "Pillow", "NumPy"]
+      },
+      {
+        "name": "Other Tools",
+        "keywords": ["Git", "LaTeX", "Linux", "Unity3D"]
+      }
+  ],
   "education": [
     {
-      "institution": "Gachon University, Seongnam, South Korea",
-      "location": "Seongnam, South Korea",
-      "url": "https://www.gachon.ac.kr/sites/eng/",
-      "area": "Computer Engineering",
-      "studyType": "Doctor of Philosophy,",
-      "startDate": "2018-03",
-      "endDate": "2021-08",
-      "score": "",
-      "courses": ["Lightweight Client-driven Personalized Multimedia Framework for Next Generation Streaming Platforms"]
-    },
-    {
-      "institution": "Indus University, Karachi, Pakistan",
-      "location": "Karachi, Pakistan",
-      "url": "https://www.indus.edu.pk/",
-      "area": "Computer Science",
-      "studyType": "Master of Science in Computer Science,",
-      "startDate": "2014-07",
-      "endDate": "2016-6",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": " COMSATS Institute of Information Technology, Lahore, Pakistan",
-      "location": "Lahore, Pakistan",
-      "url": "https://lahore.comsats.edu.pk/default.aspx",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Science in Computer Science,",
-      "startDate": "2009-09",
-      "endDate": "2013-07",
-      "score": "",
-      "courses": []
-    }
-
+        "institution": "Gachon University",
+        "location": "Seongnam, South Korea",
+        "url": "https://www.gachon.ac.kr/sites/eng/",
+        "area": "Engineering",
+        "studyType": "Doctor of Philosophy",
+        "startDate": "2018-03",
+        "endDate": "2021-08",
+        "score": "",
+        "courses": ["Lightweight Client-driven Personalized Multimedia Framework for Next Generation Streaming Platforms"]
+      },
+      {
+        "institution": "Indus University",
+        "location": "Karachi, Pakistan",
+        "url": "https://www.indus.edu.pk/",
+        "area": "Computer Science",
+        "studyType": "Master of Science",
+        "startDate": "2014-07",
+        "endDate": "2016-06",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "COMSATS Institute of Information Technology",
+        "location": "Lahore, Pakistan",
+        "url": "https://lahore.comsats.edu.pk/default.aspx",
+        "area": "Computer Science",
+        "studyType": "Bachelor of Science",
+        "startDate": "2009-09",
+        "endDate": "2013-07",
+        "score": "",
+        "courses": []
+      }
   ],
   "work": [
     {
-        "name": "West Virginia University, Morgantown, WV, USA",
+        "name": "West Virginia University",
         "location": "Morgantown, WV, USA",
         "position": "Postdoctoral Researcher",
         "url": "https://www.wvu.edu/",
         "startDate": "2023-04-01",
         "endDate": "Present",
-        "summary": ""
-    },
-    {
-        "name": "C-JeS Gulliver Studio, Seoul, South Korea",
+        "summary": "Conducted cutting-edge research on deep-learning models for analyzing medical multimodality data and explored advancements like ChatGPT, Generative AI, and Large Language Models (LLMs)."
+      },
+      {
+        "name": "C-JeS Gulliver Studio",
         "location": "Seoul, South Korea",
         "position": "Research Engineer",
         "url": "http://gullivervfx.com/",
         "startDate": "2022-03-01",
         "endDate": "2023-03-01",
-        "summary": ""
-    },
-    {
-        "name": "DeltaX.ai, Seoul, South Korea",
+        "summary": "Applied deep learning techniques to enhance realism for digital-human characters in Metaverse applications and innovated efficient 2D to 3D conversion methods."
+      },
+      {
+        "name": "DeltaX",
         "location": "Seoul, South Korea",
         "position": "Senior Researcher",
         "url": "http://deltax.ai/renewal/eng/",
         "startDate": "2021-10-01",
         "endDate": "2022-02-28",
-        "summary": ""
-    },
-    {
-        "name": "Sungkyunkwan University, Seoul, South Korea",
+        "summary": "Developed advanced deep learning techniques for XVision Technology Advancement, focusing on violence detection and content moderation in videos and images."
+      },
+      {
+        "name": "Sungkyunkwan University",
         "location": "Seoul, South Korea",
         "position": "Visiting Researcher",
         "url": "http://mcsl.skku.edu/",
         "startDate": "2019-09-01",
         "endDate": "2021-09-01",
-        "summary": ""
-    },
-    {
-        "name": "Gachon University, Seongnam, South Korea",
-        "location": "Seongnam, South Korea",
-        "position": "Graduate Research Assistant",
-        "url": "https://www.gachon.ac.kr/sites/eng/index.do",
-        "startDate": "2018-03-01",
-        "endDate": "2021-06-30",
-        "summary": ""
-    }
+        "summary": "Pioneered thumbnail-based video analysis for streaming platforms and collaborated on developing algorithms for multiview video surveillance summarization."
+      }
     
   ],
+  "projects": [
+    {
+      "name": "Digital Human Solution for Metaverse",
+      "description": "Researched cutting-edge technologies to design realistic digital humans for the Metaverse at C-JeS Gulliver Studios.",
+      "startDate": "2022-03",
+      "endDate": "2023-03"
+    },
+    {
+      "name": "xVision, AI-Based Video Analysis Solution",
+      "description": "Designed and developed the xVision method using deep learning and computer vision techniques at DeltaX.ai.",
+      "startDate": "2021-10",
+      "endDate": "2022-02"
+    },
+    {
+      "name": "Dynamic Sports Highlights Generation",
+      "description": "Proposed a lightweight client-driven method to generate artistic media for feature-length sports videos at SKKU, Seoul South Korea.",
+      "startDate": "2019-03",
+      "endDate": "2022-09"
+    }
+  ],
   "volunteer": [],
-  
   "awards": [
     {
         "title": "Doctoral Consortium",
         "date": "2021-10-01",
         "awarder": "International Conference on Computer Vision (ICCV)",
         "summary": ""
-    },
-    {
-        "title": "President`s Award for Academic Excellence",
-        "date": "2021-08-01",
+      },
+      {
+        "title": "President's Award for Academic Excellence",
+        "date": "2021",
         "awarder": "Gachon University, South Korea",
         "summary": ""
-    },
-    {
+      },
+      {
         "title": "Outstanding Research Award",
-        "date": "2020-12",
+        "date": "2020",
         "awarder": "MCSL SKKU, South Korea",
         "summary": ""
-    },
-    {
-        "title": "Finalist, Offices of Research for Hell Zone (Game)",
-        "date": "2012-06-01",
-        "awarder": "Offices of Research, Innovation & Commercialization (ORICS) Lahore, Pakistan",
+      },
+      {
+        "title": "Travel Grant",
+        "date": "2017",
+        "awarder": "Higher Education Commission (HEC) Pakistan",
         "summary": ""
-    },
-    {
-        "title": "Winner, Gaming Competition (Stronghold Crusader)",
-        "date": "2012-01-01",
-        "awarder": "Technomoot, Abbottabad., Pakistan",
-        "summary": ""
-    },
-    {
-        "title": "Scholarship for bachelor`s degree, 2009 — 2013",
-        "date": "2009-01-01",
+      },
+      {
+        "title": "Scholarship for bachelor's degree",
+        "date": "2009-2013",
         "awarder": "Ministry of IT, Pakistan",
         "summary": ""
-    }
+      }
   ],
   "certificates": [],
-  "publications": [],
-  "skills": [],
+  "publications": [
+    {
+      "type": "Patent",
+      "title": "Personalized Semantic Fast-Forward Videos for Next Generation Streaming Platforms",
+      "authors": "Ghulam Mujtaba, Eun-Seok Ryu, and Reda Harb",
+      "publisher": "United States Patent Application",
+      "releaseDate": "2022-08-30",
+      "website": "",
+      "summary": "Patent Application Number: 17/899,292"
+    },
+    {
+      "type": "Journal Article",
+      "title": "FRC-GIF: Frame Ranking-based Personalized Artistic Media Generation Method for Resource Constrained Devices",
+      "authors": "Ghulam Mujtaba, Sunder Ali Khowaja, Aslam Jarwar, Jaehyuk Choi, and Eun-Seok Ryu",
+      "publisher": "IEEE Transactions on Big Data",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Impact Factor: 7.2"
+    },
+    {
+      "type": "Journal Article",
+      "title": "LTC-SUM: Lightweight Client-driven Personalized Video Summarization Framework Using 2D CNN",
+      "authors": "Ghulam Mujtaba, Adeel Malik, and Eun-Seok Ryu",
+      "publisher": "IEEE Access",
+      "releaseDate": "2022",
+      "website": "",
+      "summary": "Vol. 10, pp. 103041-103055, Impact Factor: 3.476"
+    },
+    {
+      "type": "Conference Paper",
+      "title": "Client-driven Lightweight Method to Generate Artistic Media for Feature-length Sports Videos",
+      "authors": "Ghulam Mujtaba, Jaehyuk Choi, and Eun-Seok Ryu",
+      "publisher": "SIGMAP'22: 19th International Conference on Signal Processing and Multimedia Applications",
+      "releaseDate": "2022",
+      "website": "",
+      "summary": "Lisbon, Portugal"
+    },
+    {
+      "type": "Conference Paper",
+      "title": "Personalized Movie Trailer Using Thumbnail Containers",
+      "authors": "Ghulam Mujtaba, and Eun-Seok Ryu",
+      "publisher": "AI4TV 2019: Proceedings of the 27th ACM International Conference on Multimedia",
+      "releaseDate": "2019",
+      "website": "",
+      "summary": "Demo Paper, Nice, France"
+    }
+
+  ],
+  
   "languages": [],
-  "interests": [],
-  "references": [],
-  "projects": []
+
+  "references": []
+  
 }
