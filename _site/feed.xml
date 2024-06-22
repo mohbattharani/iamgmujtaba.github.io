@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-06-21T22:13:45-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>Dr. Ghulam Mujtaba (Ph.D.) is IEEE Senior Member and a distinguished researcher in the field of Multimedia Retrieval, Computer Vision, and Deep Learning.
+</subtitle><entry><title type="html">FFmpeg Installation on the Jetson TX2</title><link href="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/" rel="alternate" type="text/html" title="FFmpeg Installation on the Jetson TX2" /><published>2024-06-21T00:00:00-04:00</published><updated>2024-06-21T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2</id><content type="html" xml:base="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/"><![CDATA[<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/ffmpeg_jetson-480.webp 480w,/assets/img/ffmpeg_jetson-800.webp 800w,/assets/img/ffmpeg_jetson-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/ffmpeg_jetson.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+
+<p>Nvidia officially does not support FFmpeg on Jetson devices (Nano, TX2). However, FFmpeg can utilize Jetson hardware resources as an encoder and decoder. Here’s a step-by-step guide to install FFmpeg on the Jetson TX2 using JetPack SDK 4.3.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<p>Since FFmpeg is built from source, we first need to install the necessary dependencies:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt build-dep ffmpeg
+</code></pre></div></div>
+
+<p>If you encounter the error E: You must put some ‘source’ URIs in your sources.list, uncomment the source lines in /etc/apt/sources.list and update the package lists:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>vi /etc/apt/sources.list
+</code></pre></div></div>
+
+<p>Uncomment the line starting with <code class="language-plaintext highlighter-rouge">deb-src</code>, save (<code class="language-plaintext highlighter-rouge">:wq</code>), and then update the repository:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt update
+<span class="nv">$ </span><span class="nb">sudo </span>apt build-dep ffmpeg
+</code></pre></div></div>
+
+<h2 id="build-dependent-libraries">Build dependent libraries</h2>
+<p>Clone the Jetson-optimized FFmpeg repository and build it:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/jocover/jetson-ffmpeg.git
+<span class="nv">$ </span><span class="nb">cd </span>jetson-ffmpeg
+<span class="nv">$ </span><span class="nb">mkdir </span>build
+<span class="nv">$ </span><span class="nb">cd </span>build
+<span class="nv">$ </span>cmake ..
+<span class="nv">$ </span>make
+<span class="nv">$ </span><span class="nb">sudo </span>make <span class="nb">install</span>
+<span class="nv">$ </span><span class="nb">sudo </span>ldconfig
+</code></pre></div></div>
+
+<h2 id="ffmpeg-patch-and-build">FFmpeg patch and build</h2>
+<p>Clone FFmpeg repository and apply necessary patches:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone git://source.ffmpeg.org/ffmpeg.git <span class="nt">-b</span> release/4.2 <span class="nt">--depth</span><span class="o">=</span>1
+<span class="nv">$ </span><span class="nb">cd </span>ffmpeg
+<span class="nv">$ </span>wget https://github.com/jocover/jetson-ffmpeg/raw/master/ffmpeg_nvmpi.patch
+<span class="nv">$ </span>git apply ffmpeg_nvmpi.patch
+<span class="nv">$ </span>./configure <span class="nt">--enable-nvmpi</span>
+<span class="nv">$ </span>make <span class="nt">-j4</span> 2&gt;&amp;1 | <span class="nb">tee </span>make.log
+<span class="nv">$ </span><span class="nb">sudo </span>make <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>Confirm installation:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>which ffmpeg
+/usr/local/bin/ffmpeg
+<span class="nv">$ </span>ffmpeg <span class="nt">-codecs</span> | <span class="nb">grep </span>264
+</code></pre></div></div>
+<p>You should see output confirming h264_nvmpi is included in the H.264 decoder and encoder.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg version 3eedf15 Copyright <span class="o">(</span>c<span class="o">)</span> 2000-2019 the FFmpeg developers
+  built with gcc 7 <span class="o">(</span>Ubuntu/Linaro 7.5.0-3ubuntu1~18.04<span class="o">)</span>
+  configuration: <span class="nt">--enable-nvmpi</span>
+  libavutil 56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+ DEV.LS h264                 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 <span class="o">(</span>decoders: h264 h264_v4l2m2m h264_nvmpi <span class="o">)</span> <span class="o">(</span>encoders: h264_nvmpi h264_v4l2m2m h264_vaapi <span class="o">)</span>
+</code></pre></div></div>
+<p>This confirms that <code class="language-plaintext highlighter-rouge">h264_nvmpi</code> is included in both the H.264 decoder and encoder.</p>]]></content><author><name></name></author><category term="FFmpeg" /><category term="Jetson TX2" /><category term="Nvidia" /><category term="Installation" /><summary type="html"><![CDATA[]]></summary></entry></feed>
