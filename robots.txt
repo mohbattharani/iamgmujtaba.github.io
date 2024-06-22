@@ -12,5 +12,5 @@ Disallow: /projects/6_project/
 Disallow: /_pages/dropdown/
 Disallow: /news/
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://gmujtaba.com/sitemap.xml
 
