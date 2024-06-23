@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-06-22T14:04:51-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>Dr. Ghulam Mujtaba (Ph.D.) is IEEE Senior Member and a distinguished researcher in the field of Multimedia Retrieval, Computer Vision, and Deep Learning.
-</subtitle><entry><title type="html">Configure DASH Server on Windows 10/11</title><link href="http://localhost:4000/blog/2024/configure-dash-server-windows/" rel="alternate" type="text/html" title="Configure DASH Server on Windows 10/11" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/configure-dash-server-windows</id><content type="html" xml:base="http://localhost:4000/blog/2024/configure-dash-server-windows/"><![CDATA[<p>Dynamic Adaptive Streaming over HTTP (DASH), also known as MPEG-DASH, is an adaptive bitrate streaming technique that enables high-quality streaming of media content over the Internet delivered from conventional HTTP web servers. Like Apple’s HTTP Live Streaming (HLS) solution, MPEG-DASH works by breaking the content into a sequence of small segments served over HTTP. Each segment contains a short interval of playback time of content that is potentially many hours, such as a movie or the live broadcast of a sports event. The content is made available at a variety of different bit rates, i.e., alternative segments encoded at various bit rates covering aligned short intervals of playback time <a href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">ref</a>. Now, we will move forward towards the steps followed in the process:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-06-23T12:21:05-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>Dr. Ghulam Mujtaba (Ph.D.) is IEEE Senior Member and a distinguished researcher in the field of Multimedia Retrieval, Computer Vision, and Deep Learning.
+</subtitle><entry><title type="html">Configure DASH Server on Windows 10/11</title><link href="http://localhost:4000/blog/2024/configure-dash-server-windows/" rel="alternate" type="text/html" title="Configure DASH Server on Windows 10/11" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/configure-dash-server-windows</id><content type="html" xml:base="http://localhost:4000/blog/2024/configure-dash-server-windows/"><![CDATA[<p>Dynamic Adaptive Streaming over HTTP (DASH), or MPEG-DASH, is an adaptive bitrate streaming technique. It enables high-quality streaming of media content over the Internet delivered from conventional HTTP web servers. Like Apple’s HTTP Live Streaming (HLS) solution, MPEG-DASH breaks the content into small segments served over HTTP. Each segment contains a short interval of playback time of content that is potentially many hours, such as a movie or the live broadcast of a sports event. The content is made available at a variety of different bit rates, i.e., alternative segments encoded at various bit rates covering aligned short intervals of playback time <a href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">REF</a>. Now, we will move forward towards the steps followed in the process:</p>
 
 <h2 id="step-1-creation-of-the-web-server">Step 1: Creation of the Web Server</h2>
 
-<p>Microsoft provides Internet Information Services (IIS) that can be used as a web server. To configure, follow the steps below:</p>
+<p>Microsoft provides Internet Information Services (IIS) that can be easily used as a web server. To configure, follow the straightforward steps below:</p>
 
 <ol>
   <li>Select and open Windows features (WindowsKey+S (Search box), then type <strong>Turn Windows features on or off</strong>).</li>
@@ -11,10 +11,6 @@
   <li>Test it by opening Chrome and navigating to your local internet address, <strong>127.0.0.1</strong>.</li>
   <li>The default page should appear (if not, reboot your system).</li>
 </ol>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
 
 <figure>
   <picture>
@@ -32,9 +28,6 @@
   
 </figure>
 
-    </div>
-</div>
-
 <h2 id="step-2-change-default-physical-path">Step 2: Change Default Physical Path</h2>
 
 <p>You can skip this step if you don’t want to change the default path. All the files can be located at the default path <strong>C:\inetpub\wwwroot\</strong>.</p>
@@ -43,12 +36,8 @@
   <li>Open IIS Manager (WindowsKey+S, then type IIS).</li>
   <li>The <strong>Default Site</strong> stores its files in a particular directory. To expose this information, right-click on it, choose <strong>Manage Website</strong>, then <strong>Advanced Settings</strong>.</li>
   <li>This will open a pop-up window with all of the default site information, such as files or document roots, as they are typically known, enabled protocols, and even bindings.</li>
-  <li>If you click on <strong>Physical Path</strong>, a button appears on its extreme right where you can choose a different document root.</li>
+  <li>If you click on <strong>Physical Path</strong>, a button appears on its extreme right where you can choose a different document root. This is the location where your web server will look for files to serve to clients. It’s important to set this correctly to ensure your server functions as expected.</li>
 </ol>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
 
 <figure>
   <picture>
@@ -66,12 +55,9 @@
   
 </figure>
 
-    </div>
-</div>
-
 <h2 id="step-3-enabling-cross-origin-resource-sharing-cors">Step 3: Enabling Cross-Origin Resource Sharing (CORS)</h2>
 
-<p>To test streams, you need to allow other websites to access files on your web server. This is done by enabling cross-origin resource sharing (CORS). Follow these steps:</p>
+<p>To test streams, you need to allow other websites to access files on your web server. This practical task is done by enabling cross-origin resource sharing (CORS). Follow these practical steps:</p>
 
 <ol>
   <li>Open the webserver (WindowsKey+S then type <strong>IIS</strong>).</li>
@@ -79,10 +65,6 @@
   <li>Select <strong>Open Feature</strong> from the Action pane. Then, click <strong>Add</strong> and type in <strong>Access-Control-Allow-Origin</strong> for Name and type “*” for Value.</li>
   <li>Click OK to add the header. To add another value, type in <strong>Access-Control-Allow-Headers</strong> for Name and type <strong>Range</strong> for Value.</li>
 </ol>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
 
 <figure>
   <picture>
@@ -100,9 +82,6 @@
   
 </figure>
 
-    </div>
-</div>
-
 <h2 id="step-4-adding-the-dash-mime-type">Step 4: Adding the DASH MIME Type</h2>
 
 <p>DASH requires statements to learn how to analyze video and audio files. DASH manifest files end in <strong>.mpd</strong>. Windows IIS does not know about this extension by default. Follow these steps to add the MIME type:</p>
@@ -112,10 +91,6 @@
   <li>Type <strong>.mpd</strong> for File name extension and type <strong>application/dash+xml</strong> for MIME-type. Press OK.</li>
   <li>Type <strong>.m4s</strong> for File name extension and type <strong>video/mp4</strong> for MIME-type. Press OK.</li>
 </ol>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
 
 <figure>
   <picture>
@@ -133,13 +108,10 @@
   
 </figure>
 
-    </div>
-</div>
-
 <h2 id="step-5-ffmpeg-installation">Step 5: FFmpeg Installation</h2>
 
 <ol>
-  <li>Download FFmpeg from <a href="https://www.ffmpeg.org/download.html#build-windows">here</a>.</li>
+  <li>Download FFmpeg from the readily available source <a href="https://www.ffmpeg.org/download.html#build-windows">here</a>.</li>
   <li>Extract the downloaded FFmpeg zip file to <strong>C:\ffmpeg</strong>.</li>
   <li>Navigate to the <strong>bin</strong> folder under <strong>C:\ffmpeg</strong> and copy the address using Ctrl+C.</li>
   <li>Open up the System information window and click on <strong>Advanced System Settings</strong>. Then click on <strong>Environment Variables</strong>.</li>
@@ -191,23 +163,23 @@
 <p>If you can watch the video, it means you have successfully configured DASH on your Windows machine.</p>
 
 <h4 id="ubuntu-or-jetson-devices">Ubuntu or Jetson Devices</h4>
-<p>If you want to use a native DASH web player, clone <a href="https://github.com/Dash-Industry-Forum/dash.js">dash.js</a> from GitHub and follow the <a href="https://github.com/Dash-Industry-Forum/dash.js#getting-started">installation</a> instructions.</p>
+<p>Suppose you want to utilize a native DASH web player. In that case, you can clone <a href="https://github.com/Dash-Industry-Forum/dash.js">dash.js</a> from GitHub and then follow the <a href="https://github.com/Dash-Industry-Forum/dash.js#getting-started">installation</a> instructions.</p>
 
 <p>The main code is available at <a href="https://github.com/iamgmujtaba/dash-server">GitHub</a>.</p>
 
-<p>Raise an issue if you are facing any problem :)</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="Windows" /><category term="DASH" /><category term="MPEG-DASH" /><category term="IIS" /><category term="Streaming" /><category term="FFmpeg" /><category term="Windows" /><summary type="html"><![CDATA[Learn how to configure Dynamic Adaptive Streaming over HTTP (DASH) server on Windows 10/11 using Internet Information Services (IIS) and FFmpeg.]]></summary></entry><entry><title type="html">Configure HLS Server on Windows 10/11</title><link href="http://localhost:4000/blog/2024/configure-hls-server-on-windows/" rel="alternate" type="text/html" title="Configure HLS Server on Windows 10/11" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/configure-hls-server-on-windows</id><content type="html" xml:base="http://localhost:4000/blog/2024/configure-hls-server-on-windows/"><![CDATA[<p>HTTP Live Streaming (also known as HLS) is an HTTP-based adaptive bitrate streaming communications protocol developed by Apple Inc. and released in 2009. Support for the protocol is widespread in media players, web browsers, mobile devices, and streaming media servers. In the recent past, the main method of delivering video via the internet was Adobe’s Flash video technology. However, there’s been a major shift in the world of online video streaming. Specifically, the online video delivered by protocols like HLS streaming and played by HTML5 video players has increasingly replaced Adobe’s Flash protocol. HLS resembles MPEG-DASH in that it works by breaking the overall stream into a sequence of small HTTP-based file downloads, each downloading one short chunk of an overall potentially unbounded transport stream. A list of available streams, encoded at different bit rates, is sent to the client using an extended M3U playlist <a href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">ref</a>. One key benefit of this protocol relates to its compatibility features. Unlike other streaming formats, HLS is compatible with a wide range of devices and firewalls. However, latency (or lag time) tends to be in the 15-30 second range with HLS live streams. Now, we will move forward towards the steps followed in the process:</p>
+<p>Raise an issue if you are facing any problems.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="Windows" /><category term="DASH" /><category term="MPEG-DASH" /><category term="IIS" /><category term="Streaming" /><category term="FFmpeg" /><category term="Windows" /><summary type="html"><![CDATA[Learn how to configure Dynamic Adaptive Streaming over HTTP (DASH) server on Windows 10/11 using Internet Information Services (IIS) and FFmpeg.]]></summary></entry><entry><title type="html">Configure HLS Server on Windows 10/11</title><link href="http://localhost:4000/blog/2024/configure-hls-server-on-windows/" rel="alternate" type="text/html" title="Configure HLS Server on Windows 10/11" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/configure-hls-server-on-windows</id><content type="html" xml:base="http://localhost:4000/blog/2024/configure-hls-server-on-windows/"><![CDATA[<p>HTTP Live Streaming (also known as HLS) is an HTTP-based adaptive bitrate streaming communications protocol developed by Apple Inc. and released in 2009. Support for the protocol is widespread in media players, web browsers, mobile devices, and streaming media servers. In the recent past, Adobe’s Flash video technology was the primary method of delivering video via the Internet. However, there’s been a significant shift in online video streaming. Specifically, online video delivered by protocols like HLS streaming and played by HTML5 video players has increasingly replaced Adobe’s Flash protocol. HLS resembles MPEG-DASH, breaking the overall stream into a sequence of small HTTP-based file downloads, each downloading one short chunk of an overall potentially unbounded transport stream. A list of available streams, encoded at different bit rates, is sent to the client using an extended M3U playlist <a href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">REF</a>. One key benefit of this protocol relates to its compatibility features. Unlike other streaming formats, HLS is compatible with various devices and firewalls. However, latency (or lag time) tends to be in the 15-30 second range with HLS live streams. Now, we will move forward towards the steps followed in the process:</p>
 
 <h2 id="step-1-creation-of-the-web-server">Step 1: Creation of the Web Server</h2>
 
-<p>Microsoft provides Internet Information Services (IIS) that can be used as a webserver. To configure, follow the below steps.</p>
+<p>Microsoft’s Internet Information Services (IIS) is a practical and widely-used web server that we’ll be using for this setup. Don’t worry, the configuration process is not as daunting as it may seem. Just follow these simple steps:</p>
 
 <ol>
-  <li>Select and open Windows features (WindowsKey+S (Search box) then type <strong>Turn Windows features on or off</strong>).</li>
+  <li>Start by selecting and opening Windows features (WindowsKey+S (Search box) then type <strong>Turn Windows features on or off</strong>).</li>
   <li>Find Internet Information Services and Tick the box (Wait for the process to configure and then <strong>Close</strong>).</li>
   <li>
     <p>Test it by opening Chrome and navigating to your local internet address, <strong>127.0.0.1</strong>.</p>
   </li>
-  <li>The default page should appear (If not reboot your system).</li>
+  <li>The default page should appear (If not, reboot your system).</li>
 </ol>
 
 <figure>
@@ -228,9 +200,9 @@
 
 <h2 id="step-2-change-default-physical-path">Step 2: Change Default Physical Path</h2>
 
-<p>If you don’t want to change the default path, you can skip this step. All the files can be located at the default path <strong>C:\inetpub\wwwroot\</strong></p>
+<p>You can skip this step if you don’t want to change the default path. All the files can be located at the default path <strong>C:\inetpub\wwwroot\</strong></p>
 
-<p>Open IIS Manager (WindowsKey+S then type IIS). The <strong>Default Site</strong> stores its files in a particular directory. To expose this information, right-click on it, choose <strong>Manage Website</strong> then <strong>Advanced Settings</strong>. This will open a pop-up window with all of the Default Sites information such as files or Document Root as it is normally known, enabled protocols, and even bindings. If you click on <strong>Physical Path</strong> a button appears on its extreme right where you can choose a different document root.</p>
+<p>Open IIS Manager (WindowsKey+S, then type IIS). The <strong>Default Site</strong> stores its files in a particular directory. To expose this information, right-click on it, choose <strong>Manage Website</strong>, then <strong>Advanced Settings</strong>. This will open a pop-up window with all the default site information, such as files or document roots, as they are typically known, enabled protocols, and even bindings. If you click on <strong>Physical Path</strong>, a button will appear on its extreme right where you can choose a different document root.</p>
 
 <figure>
   <picture>
@@ -250,7 +222,7 @@
 
 <h2 id="step-3-enabling-cross-origin-resource-sharing-cors">Step 3: Enabling Cross-origin resource sharing (CORS)</h2>
 
-<p>To test streams, you need to allow other websites to access files on your web server. However, due to security concerns, not all modern browsers allow this by default. To allow this, you need to explicitly tell the browser that you agree to a website to read data from your server. This is called cross-source resource sharing (CORS). To enable CORS to follow the below steps:</p>
+<p>To test streams, you must allow other websites to access files on your web server. However, not all modern browsers allow this by default due to security concerns. To allow this, you must explicitly tell the browser that you agree to a website to read data from your server. This is called cross-source resource sharing (CORS). To enable CORS to follow the below steps:</p>
 
 <ol>
   <li>Open the webserver (WindowsKey+S then type <strong>IIS</strong>).</li>
@@ -347,6 +319,7 @@
 </code></pre></div></div>
 
 <h2 id="step-7-final-testing">Step 7: Final Testing</h2>
+
 <h3 id="check-your-ip-address">Check your IP Address</h3>
 <p>Open cmd and type <strong>ipconfig</strong>. Get IPv4 Address. It would be 192.XXX.XXX.XXX.</p>
 <h3 id="play-video-on-hls-player">Play Video on HLS Player</h3>
@@ -362,11 +335,11 @@
 <p>If you have iPhone, open safari and type like this <strong>192.XXX.XXX.XXX/bbb/out.m3u8</strong>. <strong>bbb</strong> is the directory of the processed BigBuckBunny video and <strong>out.m3u8</strong> is the HLS text file we created using the above script. Please note the iPhone should be connected to the same WiFi network.</p>
 
 <h4 id="ubuntu-or-jetson-devices">Ubuntu or Jetson Devices</h4>
-<p>If you want to use a native HLS web player, clone <a href="https://github.com/video-dev/hls.js/">hls.js</a> from GitHub and follow the <a href="https://github.com/video-dev/hls.js/#getting-started-with-development">installation</a> instructions.</p>
+<p>Suppose you want to use a native HLS web player. In that case, you can clone <a href="https://github.com/video-dev/hls.js/">hls.js</a> from GitHub and follow the <a href="https://github.com/video-dev/hls.js/#getting-started-with-development">installation</a> instructions.</p>
 
 <p>The main code is available at <a href="https://github.com/iamgmujtaba/hls-server">GitHub</a>.</p>
 
-<p>Raise an issue if you are facing any problem :)</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="Windows" /><category term="HLS" /><category term="Streaming" /><category term="Windows" /><category term="IIS" /><category term="FFmpeg" /><summary type="html"><![CDATA[Learn how to configure HTTP Live Streaming (HLS) server on Windows 10/11 using Internet Information Services (IIS) and FFmpeg.]]></summary></entry><entry><title type="html">Generate Thumbnail Containers from Videos like YouTube</title><link href="http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos/" rel="alternate" type="text/html" title="Generate Thumbnail Containers from Videos like YouTube" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos</id><content type="html" xml:base="http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos/"><![CDATA[<p>This repository explains the process to generate thumbnail containers from videos. In recent years, several methods have been designed to improve the demanding timeline manipulation for video browsing. One of the most popular methods for web-based video players is the use of lightweight thumbnail containers. Users can skim through the video player for efficiency and instantly preview a lengthy video, by watching the thumbnail preview in the web player interface. As the thumbnails are easy to integrate and navigate in web-based video players, several famous video-on-demand (VoD) streaming platforms adopt these in their end-user video players <a href="https://arxiv.org/abs/2201.09049">ref1</a>.</p>
+<p>Raise an issue if you are facing any problems.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="Windows" /><category term="HLS" /><category term="Streaming" /><category term="Windows" /><category term="IIS" /><category term="FFmpeg" /><summary type="html"><![CDATA[Learn how to configure HTTP Live Streaming (HLS) server on Windows 10/11 using Internet Information Services (IIS) and FFmpeg.]]></summary></entry><entry><title type="html">Generate Thumbnail Containers from Videos like YouTube</title><link href="http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos/" rel="alternate" type="text/html" title="Generate Thumbnail Containers from Videos like YouTube" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos</id><content type="html" xml:base="http://localhost:4000/blog/2024/generate-thumbnail-containers-from-videos/"><![CDATA[<p>This repository is a comprehensive guide on the crucial process of generating thumbnail containers from videos. In recent years, numerous methods have been developed to enhance the demanding timeline manipulation for video browsing. One of the most widely used techniques for web-based video players is the utilization of lightweight thumbnail containers. These containers allow users to swiftly navigate through the video player and get an instant preview of a lengthy video by viewing the thumbnail preview in the web player interface. Due to their ease of integration and navigation in web-based video players, many renowned video-on-demand (VoD) streaming platforms have incorporated them into their end-user video players <a href="https://arxiv.org/abs/2201.09049">REF</a>.</p>
 
 <figure>
   <picture>
@@ -427,12 +400,10 @@ optional arguments:
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python .<span class="se">\m</span>ain.py <span class="nt">-i</span> .<span class="se">\i</span>nput<span class="se">\ </span><span class="nt">-o</span> .<span class="se">\o</span>utput<span class="se">\</span>
 </code></pre></div></div>
 
-<h5 id="acknowledgement">Acknowledgement</h5>
-<p>The base code for this repository is borrowed from <a href="https://github.com/flavioribeiro/video-thumbnail-generator">Video Thumbnail Generator</a>.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="YouTube" /><category term="Video" /><category term="Thumbnails" /><category term="YouTube" /><category term="Python" /><category term="FFmpeg" /><summary type="html"><![CDATA[Learn how to generate thumbnail containers from videos using Python and FFmpeg.]]></summary></entry><entry><title type="html">FFmpeg Installation on the Jetson TX2</title><link href="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/" rel="alternate" type="text/html" title="FFmpeg Installation on the Jetson TX2" /><published>2024-06-21T00:00:00-04:00</published><updated>2024-06-21T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2</id><content type="html" xml:base="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/"><![CDATA[<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<p>The main code is available at <a href="https://github.com/iamgmujtaba/vid2tc">GitHub vid2tc</a>.</p>
 
-<figure>
+<h5 id="acknowledgement">Acknowledgement</h5>
+<p>The base code for this repository, which ensures its reliability, has been borrowed from <a href="https://github.com/flavioribeiro/video-thumbnail-generator">Video Thumbnail Generator</a>.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="YouTube" /><category term="Video" /><category term="Thumbnails" /><category term="YouTube" /><category term="Python" /><category term="FFmpeg" /><summary type="html"><![CDATA[Learn how to generate thumbnail containers from videos using Python and FFmpeg.]]></summary></entry><entry><title type="html">FFmpeg Installation on the Jetson TX2</title><link href="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/" rel="alternate" type="text/html" title="FFmpeg Installation on the Jetson TX2" /><published>2024-06-21T00:00:00-04:00</published><updated>2024-06-21T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2</id><content type="html" xml:base="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/"><![CDATA[<figure>
   <picture>
     <!-- Auto scaling with imagemagick -->
     <!--
@@ -448,10 +419,7 @@ optional arguments:
   
 </figure>
 
-    </div>
-</div>
-
-<p>Nvidia officially does not support FFmpeg on Jetson devices (Nano, TX2). However, FFmpeg can utilize Jetson hardware resources as an encoder and decoder. Here’s a step-by-step guide to install FFmpeg on the Jetson TX2 using JetPack SDK 4.3.</p>
+<p>While Nvidia does not officially support FFmpeg on Jetson devices (Nano, TX2), it’s worth noting that FFmpeg can leverage Jetson’s powerful hardware resources as an encoder and decoder. This unique capability makes it a compelling choice for your projects. Here’s a detailed guide to installing FFmpeg on the Jetson TX2 using JetPack SDK 4.3.</p>
 
 <h3 id="prerequisites">Prerequisites</h3>
 
@@ -499,7 +467,7 @@ optional arguments:
 /usr/local/bin/ffmpeg
 <span class="nv">$ </span>ffmpeg <span class="nt">-codecs</span> | <span class="nb">grep </span>264
 </code></pre></div></div>
-<p>You should see output confirming h264_nvmpi is included in the H.264 decoder and encoder.</p>
+<p>You should see the output confirming that <code class="language-plaintext highlighter-rouge">h264_nvmpi</code> is included in the H.264 decoder and encoder.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg version 3eedf15 Copyright <span class="o">(</span>c<span class="o">)</span> 2000-2019 the FFmpeg developers
   built with gcc 7 <span class="o">(</span>Ubuntu/Linaro 7.5.0-3ubuntu1~18.04<span class="o">)</span>
   configuration: <span class="nt">--enable-nvmpi</span>
@@ -512,4 +480,6 @@ optional arguments:
   libswresample   3.  5.100 /  3.  5.100
  DEV.LS h264                 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 <span class="o">(</span>decoders: h264 h264_v4l2m2m h264_nvmpi <span class="o">)</span> <span class="o">(</span>encoders: h264_nvmpi h264_v4l2m2m h264_vaapi <span class="o">)</span>
 </code></pre></div></div>
-<p>This confirms that <code class="language-plaintext highlighter-rouge">h264_nvmpi</code> is included in both the H.264 decoder and encoder.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="FFmpeg" /><category term="Nvidia" /><category term="FFmpeg" /><category term="Jetson TX2" /><category term="Nvidia" /><category term="Installation" /><summary type="html"><![CDATA[Step-by-step guide to install FFmpeg on Nvidia Jetson TX2.]]></summary></entry></feed>
+<p>Once you’ve followed these steps, you can confirm the successful installation by checking if <code class="language-plaintext highlighter-rouge">h264_nvmpi</code> is included in both the H.264 decoder and encoder. This confirmation will give you the satisfaction of a job well done.</p>
+
+<p>The first version of the blog is available <a href="https://iamgmujtaba.medium.com/ffmpegs-installation-on-the-jetson-tx2-66b5a3f21d02">here</a>.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="FFmpeg" /><category term="Nvidia" /><category term="FFmpeg" /><category term="Jetson TX2" /><category term="Nvidia" /><category term="Installation" /><summary type="html"><![CDATA[Step-by-step guide to install FFmpeg on Nvidia Jetson TX2.]]></summary></entry></feed>

@@ -174,54 +174,7 @@
       }
   ],
   "certificates": [],
-  "publications": [
-    {
-      "type": "Patent",
-      "title": "Personalized Semantic Fast-Forward Videos for Next Generation Streaming Platforms",
-      "authors": "Ghulam Mujtaba, Eun-Seok Ryu, and Reda Harb",
-      "publisher": "United States Patent Application",
-      "releaseDate": "2022-08-30",
-      "website": "",
-      "summary": "Patent Application Number: 17/899,292"
-    },
-    {
-      "type": "Journal Article",
-      "title": "FRC-GIF: Frame Ranking-based Personalized Artistic Media Generation Method for Resource Constrained Devices",
-      "authors": "Ghulam Mujtaba, Sunder Ali Khowaja, Aslam Jarwar, Jaehyuk Choi, and Eun-Seok Ryu",
-      "publisher": "IEEE Transactions on Big Data",
-      "releaseDate": "2023",
-      "website": "",
-      "summary": "Impact Factor: 7.2"
-    },
-    {
-      "type": "Journal Article",
-      "title": "LTC-SUM: Lightweight Client-driven Personalized Video Summarization Framework Using 2D CNN",
-      "authors": "Ghulam Mujtaba, Adeel Malik, and Eun-Seok Ryu",
-      "publisher": "IEEE Access",
-      "releaseDate": "2022",
-      "website": "",
-      "summary": "Vol. 10, pp. 103041-103055, Impact Factor: 3.476"
-    },
-    {
-      "type": "Conference Paper",
-      "title": "Client-driven Lightweight Method to Generate Artistic Media for Feature-length Sports Videos",
-      "authors": "Ghulam Mujtaba, Jaehyuk Choi, and Eun-Seok Ryu",
-      "publisher": "SIGMAP'22: 19th International Conference on Signal Processing and Multimedia Applications",
-      "releaseDate": "2022",
-      "website": "",
-      "summary": "Lisbon, Portugal"
-    },
-    {
-      "type": "Conference Paper",
-      "title": "Personalized Movie Trailer Using Thumbnail Containers",
-      "authors": "Ghulam Mujtaba, and Eun-Seok Ryu",
-      "publisher": "AI4TV 2019: Proceedings of the 27th ACM International Conference on Multimedia",
-      "releaseDate": "2019",
-      "website": "",
-      "summary": "Demo Paper, Nice, France"
-    }
-
-  ],
+  "publications": [],
   
   "languages": [],
 
