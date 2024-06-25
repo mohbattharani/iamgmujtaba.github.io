@@ -1,19 +1,22 @@
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0 text-left">
-      &copy; Copyright {{ site.time | date: '%Y' }}
-      {{ site.first_name }}
-      {{ site.middle_name }}
-      {{ site.last_name }}. {{ site.footer_text }}
-      {% if site.impressum_path %}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-      {% endif %}
-      {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-      {% endif %}
-      <span class="page-visited-text">Page visited </span>
-       
-        <!-- Statcounter code for Ghulam Mujtaba -->
+    <div class="container mt-0 d-flex justify-content-between align-items-center">
+      <div class="footer-content text-center">
+        <span>
+          &copy; Copyright {{ site.time | date: '%Y' }}
+          {{ site.first_name }}
+          {{ site.middle_name }}
+          {{ site.last_name }}. {{ site.footer_text }}
+          {% if site.impressum_path %}
+            <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+          {% endif %}
+          {% if site.last_updated %}
+            Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+          {% endif %}
+        </span>
+      </div>
+      <div class="statcounter-container">
+        <span class="page-visited-text">Page visited </span>
         <script type="text/javascript">
           var sc_project=11163739; 
           var sc_invisible=0; 
@@ -21,7 +24,7 @@
           var scJsHost = "https://";
           document.write("<sc"+"ript type='text/javascript' src='" +
           scJsHost+
-          "statcounter.com/counter/counter.js'></"+"script>");
+          "statcounter.com/counter/counter.js'><\/sc"+"ript>");
         </script>
         <noscript>
           <div class="statcounter">
@@ -31,25 +34,28 @@
           </div>
         </noscript>
         <!-- End of Statcounter Code -->
-      </span>
+      </div>
     </div>
   </footer>
 {% else %}
   <footer class="sticky-bottom mt-5" role="contentinfo">
-    <div class="container text-left">
-      &copy; Copyright {{ site.time | date: '%Y' }}
-      {{ site.first_name }}
-      {{ site.middle_name }}
-      {{ site.last_name }}. {{ site.footer_text }}
-      {% if site.impressum_path %}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-      {% endif %}
-      {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-      {% endif %}
-      <span class="statcounter-container">
-      <span class="page-visited-text">Page visited </span>
-        <!-- Statcounter code for Ghulam Mujtaba -->
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="footer-content text-center">
+        <span>
+          &copy; Copyright {{ site.time | date: '%Y' }}
+          {{ site.first_name }}
+          {{ site.middle_name }}
+          {{ site.last_name }}. {{ site.footer_text }}
+          {% if site.impressum_path %}
+            <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+          {% endif %}
+          {% if site.last_updated %}
+            Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+          {% endif %}
+        </span>
+      </div>
+      <div class="statcounter-container">
+        <span class="page-visited-text">Page visited </span>
         <script type="text/javascript">
           var sc_project=11163739; 
           var sc_invisible=0; 
@@ -57,7 +63,7 @@
           var scJsHost = "https://";
           document.write("<sc"+"ript type='text/javascript' src='" +
           scJsHost+
-          "statcounter.com/counter/counter.js'></"+"script>");
+          "statcounter.com/counter/counter.js'><\/sc"+"ript>");
         </script>
         <noscript>
           <div class="statcounter">
@@ -67,7 +73,7 @@
           </div>
         </noscript>
         <!-- End of Statcounter Code -->
-      </span>
+      </div>
     </div>
   </footer>
 {% endif %}
