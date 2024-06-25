@@ -1,79 +1,31 @@
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0 d-flex justify-content-between align-items-center">
-      <div class="footer-content text-center">
-        <span>
-          &copy; Copyright {{ site.time | date: '%Y' }}
-          {{ site.first_name }}
-          {{ site.middle_name }}
-          {{ site.last_name }}. {{ site.footer_text }}
-          {% if site.impressum_path %}
-            <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-          {% endif %}
-          {% if site.last_updated %}
-            Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-          {% endif %}
-        </span>
-      </div>
-      <div class="statcounter-container">
-        <span class="page-visited-text">Page visited </span>
-        <script type="text/javascript">
-          var sc_project=11163739; 
-          var sc_invisible=0; 
-          var sc_security="5d56c29f"; 
-          var scJsHost = "https://";
-          document.write("<sc"+"ript type='text/javascript' src='" +
-          scJsHost+
-          "statcounter.com/counter/counter.js'><\/sc"+"ript>");
-        </script>
-        <noscript>
-          <div class="statcounter">
-            <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
-              <img class="statcounter" src="https://c.statcounter.com/11163739/0/5d56c29f/0/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade">
-            </a>
-          </div>
-        </noscript>
-        <!-- End of Statcounter Code -->
-      </div>
+    <div class="container mt-0 text-left">
+      &copy; Copyright {{ site.time | date: '%Y' }}
+      {{ site.first_name }}
+      {{ site.middle_name }}
+      {{ site.last_name }}. {{ site.footer_text }}
+      {% if site.impressum_path %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+      {% endif %}
+      {% if site.last_updated %}
+        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+      {% endif %}
     </div>
   </footer>
 {% else %}
   <footer class="sticky-bottom mt-5" role="contentinfo">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="footer-content text-center">
-        <span>
-          &copy; Copyright {{ site.time | date: '%Y' }}
-          {{ site.first_name }}
-          {{ site.middle_name }}
-          {{ site.last_name }}. {{ site.footer_text }}
-          {% if site.impressum_path %}
-            <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-          {% endif %}
-          {% if site.last_updated %}
-            Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-          {% endif %}
-        </span>
-      </div>
-      <div class="statcounter-container">
-        <span class="page-visited-text">Page visited </span>
-        <script type="text/javascript">
-          var sc_project=11163739; 
-          var sc_invisible=0; 
-          var sc_security="5d56c29f"; 
-          var scJsHost = "https://";
-          document.write("<sc"+"ript type='text/javascript' src='" +
-          scJsHost+
-          "statcounter.com/counter/counter.js'><\/sc"+"ript>");
-        </script>
-        <noscript>
-          <div class="statcounter">
-            <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
-              <img class="statcounter" src="https://c.statcounter.com/11163739/0/5d56c29f/0/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade">
-            </a>
-          </div>
-        </noscript>
-        <!-- End of Statcounter Code -->
-      </div>
+    <div class="container text-left">
+      &copy; Copyright {{ site.time | date: '%Y' }}
+      {{ site.first_name }}
+      {{ site.middle_name }}
+      {{ site.last_name }}. {{ site.footer_text }}
+      {% if site.impressum_path %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+      {% endif %}
+      {% if site.last_updated %}
+        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+      {% endif %}
     </div>
   </footer>
 {% endif %}
