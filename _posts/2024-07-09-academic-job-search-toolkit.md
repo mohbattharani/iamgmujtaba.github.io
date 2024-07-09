@@ -1,10 +1,10 @@
 ---
 layout: post
 title: AcademicJobToolkit - Streamline Your Academic Job Applications
+description: "Python and LaTeX-based project to simplify academic job application document preparation."
 date: 2024-07-09 09:00:00-0400
-description: Introducing AcademicJobToolkit, a Python and LaTeX-based project to simplify academic job application document preparation.
-tags: academic-jobs python latex toolkit open-source
-categories: projects
+tags: [academic-jobs, python, latex, toolkit]
+thumbnail: assets/img/blog/jobsearch_over.png
 ---
 
 As an academic, preparing job application documents can be a time-consuming and complex process. That's why I am excited to introduce **AcademicJobToolkit**, a new open-source project designed to simplify and streamline the preparation of academic job application materials.
@@ -18,6 +18,9 @@ AcademicJobToolkit is a Python and LaTeX-based project that assists in preparing
 1. **LaTeX Project Structure**: The toolkit provides an organized template for compiling academic job application documents.
 2. **PDF Splitting**: It includes a Python script to split the compiled PDF into individual sections automatically.
 3. **Customizable**: Users can easily modify the LaTeX templates and Python script to fit different job application requirements.
+
+{% include figure.liquid loading="eager" path="assets/img/blog/jobsearch_over.png" class="img-fluid rounded z-depth-1" %}
+
 
 ### How It Works
 
@@ -70,6 +73,7 @@ The README of [GitHub repository](https://github.com/iamgmujtaba/AcademicJobTool
 ```bash
 python split_pdf.py
 ```
+{% include figure.liquid loading="eager" path="assets/img/blog/jobsearch_cmd.png" class="img-fluid rounded z-depth-1" %}
 
 
 ### Directory Structure
