@@ -48,6 +48,7 @@ The project requires Python 3.x, the PyPDF2 library, and a LaTeX distribution (O
 
 ### Installation
 - Clone the repository:
+
 ``` bash
 git clone https://github.com/iamgmujtaba/AcademicJobToolkit.git
 cd AcademicJobToolkit
@@ -73,10 +74,12 @@ The README of [GitHub repository](https://github.com/iamgmujtaba/AcademicJobTool
 ```bash
 python split_pdf.py
 ```
+
 {% include figure.liquid loading="eager" path="assets/img/blog/jobsearch_cmd.png" class="img-fluid rounded z-depth-1" %}
 
 
 ### Directory Structure
+
 ```
 job-toolkit
 │
@@ -92,6 +95,7 @@ job-toolkit
 └── split_pdf.py
 └── README.md
 ```
+
 ### File Descriptions
 - `main.tex`: Main LaTeX file that combines all sections
 - `resume.sty`: Custom style file for LaTeX
