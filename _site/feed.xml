@@ -1,5 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-06-23T19:17:51-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>Dr. Ghulam Mujtaba (Ph.D.) is IEEE Senior Member and a distinguished researcher in the field of Multimedia Retrieval, Computer Vision, and Deep Learning.
-</subtitle><entry><title type="html">Configure DASH Server on Windows 10/11</title><link href="http://localhost:4000/blog/2024/configure-dash-server-windows/" rel="alternate" type="text/html" title="Configure DASH Server on Windows 10/11" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/configure-dash-server-windows</id><content type="html" xml:base="http://localhost:4000/blog/2024/configure-dash-server-windows/"><![CDATA[<p>Dynamic Adaptive Streaming over HTTP (DASH), or MPEG-DASH, is an adaptive bitrate streaming technique. It enables high-quality streaming of media content over the Internet delivered from conventional HTTP web servers. Like Apple’s HTTP Live Streaming (HLS) solution, MPEG-DASH breaks the content into small segments served over HTTP. Each segment contains a short interval of playback time of content that is potentially many hours, such as a movie or the live broadcast of a sports event. The content is made available at a variety of different bit rates, i.e., alternative segments encoded at various bit rates covering aligned short intervals of playback time <a href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">REF</a>. Now, we will move forward towards the steps followed in the process:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-16T10:03:24-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>Dr. Ghulam Mujtaba (Ph.D.) is IEEE Senior Member and a distinguished researcher in the field of Multimedia Retrieval, Computer Vision, and Deep Learning.
+</subtitle><entry><title type="html">AcademicJobToolkit - Streamline Your Academic Job Applications</title><link href="http://localhost:4000/blog/2024/academic-job-search-toolkit/" rel="alternate" type="text/html" title="AcademicJobToolkit - Streamline Your Academic Job Applications" /><published>2024-07-09T09:00:00-04:00</published><updated>2024-07-09T09:00:00-04:00</updated><id>http://localhost:4000/blog/2024/academic-job-search-toolkit</id><content type="html" xml:base="http://localhost:4000/blog/2024/academic-job-search-toolkit/"><![CDATA[<p>As an academic, preparing job application documents can be a time-consuming and complex process. That’s why I am excited to introduce <strong>AcademicJobToolkit</strong>, a new open-source project designed to simplify and streamline the preparation of academic job application materials.</p>
+
+<h3 id="what-is-academicjobtoolkit">What is AcademicJobToolkit?</h3>
+
+<p>AcademicJobToolkit is a Python and LaTeX-based project that assists in preparing and organizing academic job application documents. Its primary function is to simplify the process of splitting a single PDF containing multiple sections (such as Cover Letter, Research Statement, Teaching Statement, Diversity Statement, and References) into separate PDFs for each section.</p>
+
+<h3 id="key-features">Key Features</h3>
+
+<ol>
+  <li><strong>LaTeX Project Structure</strong>: The toolkit provides an organized template for compiling academic job application documents.</li>
+  <li><strong>PDF Splitting</strong>: It includes a Python script to split the compiled PDF into individual sections automatically.</li>
+  <li><strong>Customizable</strong>: Users can easily modify the LaTeX templates and Python script to fit different job application requirements.</li>
+</ol>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/jobsearch_over-480.webp 480w,/assets/img/blog/jobsearch_over-800.webp 800w,/assets/img/blog/jobsearch_over-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/jobsearch_over.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h3 id="how-it-works">How It Works</h3>
+
+<ol>
+  <li>Users prepare their LaTeX project using the provided templates, compiling all sections into a single PDF.</li>
+  <li>The Python script then splits this PDF into individual files for each section.</li>
+  <li>The result is a set of neatly organized, separate PDFs ready for submission.</li>
+</ol>
+
+<h3 id="technical-details">Technical Details</h3>
+
+<p>The project requires Python 3.x, the PyPDF2 library, and a LaTeX distribution (Overleaf is recommended). The repository includes LaTeX templates for various application documents and a Python script for PDF splitting.</p>
+
+<h3 id="why-use-academicjobtoolkit">Why Use AcademicJobToolkit?</h3>
+
+<ol>
+  <li><strong>Time-Saving</strong>: Automates the tedious process of separating application documents.</li>
+  <li><strong>Consistency</strong>: Ensures a uniform look across all application materials.</li>
+  <li><strong>Flexibility</strong>: Easily adaptable to different application requirements.</li>
+  <li><strong>Open-Source</strong>: Free to use and open for community contributions.</li>
+</ol>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Python 3.x</li>
+  <li>PyPDF2 library</li>
+  <li>LaTeX distribution (Overleaf recommended)</li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+<ul>
+  <li>Clone the repository:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/iamgmujtaba/AcademicJobToolkit.git
+<span class="nb">cd </span>AcademicJobToolkit
+</code></pre></div></div>
+<ul>
+  <li>Install the required Python packages:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>PyPDF2
+</code></pre></div></div>
+
+<p>The README of <a href="https://github.com/iamgmujtaba/AcademicJobToolkit">GitHub repository</a> provides detailed instructions on installation and usage.</p>
+
+<h3 id="usage">Usage</h3>
+<ol>
+  <li>
+    <p>Prepare your LaTeX project, which is compiled into a single PDF file containing all sections of your job application. The LaTeX project should be structured with \newpage between sections to ensure each section starts on a new page.</p>
+  </li>
+  <li>
+    <p>Save the compiled PDF in the project directory as CS_JobSearch.pdf (or any name you prefer).</p>
+  </li>
+  <li>
+    <p>Update the sections list in the Python script to match the structure of your PDF. Each section should have the name, starting page, and ending page.</p>
+  </li>
+  <li>
+    <p>Run the Python script to split the PDF into individual sections:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python split_pdf.py
+</code></pre></div></div>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/blog/jobsearch_cmd-480.webp 480w,/assets/img/blog/jobsearch_cmd-800.webp 800w,/assets/img/blog/jobsearch_cmd-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/blog/jobsearch_cmd.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+<h3 id="directory-structure">Directory Structure</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>job-toolkit
+│
+├── main.tex
+├── resume.sty
+├── bibliography.bib
+├── sections
+│   ├── cover_letter.tex
+│   ├── research_statement.tex
+│   ├── teaching_statement.tex
+│   ├── diversity_statement.tex
+│   ├── references.tex
+└── split_pdf.py
+└── README.md
+</code></pre></div></div>
+
+<h3 id="file-descriptions">File Descriptions</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">main.tex</code>: Main LaTeX file that combines all sections</li>
+  <li><code class="language-plaintext highlighter-rouge">resume.sty</code>: Custom style file for LaTeX</li>
+  <li><code class="language-plaintext highlighter-rouge">bibliography.bib</code>: BibTeX file for references</li>
+  <li><code class="language-plaintext highlighter-rouge">split_pdf.py</code>: Python script to split the compiled PDF</li>
+</ul>
+
+<h3 id="output">Output</h3>
+<p>After running the script, your jobApp directory will contain files like:</p>
+<ul>
+  <li>Cover_Letter.pdf</li>
+  <li>Research_Statement.pdf</li>
+  <li>Teaching_Statement.pdf</li>
+  <li>Diversity_Statement.pdf</li>
+  <li>References.pdf</li>
+</ul>
+
+<h3 id="contribute">Contribute</h3>
+
+<p>As an open-source project, AcademicJobToolkit welcomes contributions from the community. Whether it’s improving the LaTeX templates, enhancing the Python script, or suggesting new features, your input is valuable.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>AcademicJobToolkit aims to make the academic job application process smoother and more efficient. By automating document preparation and organization, it allows academics to focus more on the content of their applications rather than the logistics.</p>
+
+<p>Try out AcademicJobToolkit for your next job application, and feel free to share your feedback or contributions!</p>
+
+<hr />
+
+<p><em>This project is maintained by [Your Name]. For more information, visit the <a href="https://github.com/iamgmujtaba/AcademicJobToolkit">AcademicJobToolkit GitHub repository</a>.</em></p>]]></content><author><name></name></author><category term="academic-jobs" /><category term="python" /><category term="latex" /><category term="toolkit" /><summary type="html"><![CDATA[Python and LaTeX-based project to simplify academic job application document preparation.]]></summary></entry><entry><title type="html">Configure DASH Server on Windows 10/11</title><link href="http://localhost:4000/blog/2024/configure-dash-server-windows/" rel="alternate" type="text/html" title="Configure DASH Server on Windows 10/11" /><published>2024-06-22T00:00:00-04:00</published><updated>2024-06-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/configure-dash-server-windows</id><content type="html" xml:base="http://localhost:4000/blog/2024/configure-dash-server-windows/"><![CDATA[<p>Dynamic Adaptive Streaming over HTTP (DASH), or MPEG-DASH, is an adaptive bitrate streaming technique. It enables high-quality streaming of media content over the Internet delivered from conventional HTTP web servers. Like Apple’s HTTP Live Streaming (HLS) solution, MPEG-DASH breaks the content into small segments served over HTTP. Each segment contains a short interval of playback time of content that is potentially many hours, such as a movie or the live broadcast of a sports event. The content is made available at a variety of different bit rates, i.e., alternative segments encoded at various bit rates covering aligned short intervals of playback time <a href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">REF</a>. Now, we will move forward towards the steps followed in the process:</p>
 
 <h2 id="step-1-creation-of-the-web-server">Step 1: Creation of the Web Server</h2>
 
@@ -403,7 +562,7 @@ optional arguments:
 <p>The main code is available at <a href="https://github.com/iamgmujtaba/vid2tc">GitHub vid2tc</a>.</p>
 
 <h5 id="acknowledgement">Acknowledgement</h5>
-<p>The base code for this repository, which ensures its reliability, has been borrowed from <a href="https://github.com/flavioribeiro/video-thumbnail-generator">Video Thumbnail Generator</a>.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="YouTube" /><category term="Video" /><category term="Thumbnails" /><category term="YouTube" /><category term="Python" /><category term="FFmpeg" /><summary type="html"><![CDATA[Learn how to generate thumbnail containers from videos using Python and FFmpeg.]]></summary></entry><entry><title type="html">FFmpeg Installation on the Jetson TX2</title><link href="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/" rel="alternate" type="text/html" title="FFmpeg Installation on the Jetson TX2" /><published>2024-06-21T00:00:00-04:00</published><updated>2024-06-21T00:00:00-04:00</updated><id>http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2</id><content type="html" xml:base="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/"><![CDATA[<figure>
+<p>The base code for this repository, which ensures its reliability, has been borrowed from <a href="https://github.com/flavioribeiro/video-thumbnail-generator">Video Thumbnail Generator</a>.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="Streaming" /><category term="YouTube" /><category term="Video" /><category term="Thumbnails" /><category term="YouTube" /><category term="Python" /><category term="FFmpeg" /><summary type="html"><![CDATA[Learn how to generate thumbnail containers from videos using Python and FFmpeg.]]></summary></entry><entry><title type="html">FFmpeg Installation on the Jetson TX2</title><link href="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/" rel="alternate" type="text/html" title="FFmpeg Installation on the Jetson TX2" /><published>2024-06-21T09:00:00-04:00</published><updated>2024-06-21T09:00:00-04:00</updated><id>http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2</id><content type="html" xml:base="http://localhost:4000/blog/2024/ffmpeg-installation-jetson-tx2/"><![CDATA[<figure>
   <picture>
     <!-- Auto scaling with imagemagick -->
     <!--
