@@ -7,9 +7,9 @@
     "url": "https://gmujtaba.com/",
     "summary": "Dr. Ghulam Mujtaba is an IEEE Senior Member and a distinguished researcher in the fields of Computer Vision, Deep Learning for Visual Analysis, and Multimedia Retrieval. He has seven-plus years of industrial experience (3 years post-PhD) in research and engineering, with expertise in developing SOTA deep learning techniques for complex problems.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "",
+      "address": "3333 Regis Blvd",
+      "postalCode": "80221",
+      "city": "Denver",
       "countryCode": "US",
       "region": ""
     },
@@ -83,12 +83,21 @@
   ],
   "work": [
     {
+      "name": "Regis University",
+      "location": "Denver, CO, USA",
+      "position": "Assistant Professor",
+      "url": "https://www.regis.edu/",
+      "startDate": "2023-08-01",
+      "endDate": "Present",
+      "summary": ""
+    },
+    {
         "name": "West Virginia University",
         "location": "Morgantown, WV, USA",
         "position": "Postdoctoral Researcher",
         "url": "https://www.wvu.edu/",
         "startDate": "2023-04-01",
-        "endDate": "Present",
+        "endDate": "2024-06-01",
         "summary": "Conducted cutting-edge research on deep-learning models for analyzing medical multimodality data and explored advancements like ChatGPT, Generative AI, and Large Language Models (LLMs)."
       },
       {
